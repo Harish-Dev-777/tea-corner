@@ -4,14 +4,10 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Phone, Mail, Clock, MapPin, ArrowRight } from 'lucide-react';
-import Header from '@/components/home/Header';
-import Footer from '@/components/home/Footer';
-import MobileNav from '@/components/home/MobileNav';
 
 export default function ContactPage() {
   return (
-    <main className="relative z-10 w-full min-h-screen bg-white flex flex-col overflow-x-hidden">
-      <Header />
+    <main className="relative z-10 w-full flex-grow bg-white flex flex-col overflow-x-hidden" role="main">
       
       {/* Background radial glows */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full pointer-events-none"></div>
@@ -190,8 +186,6 @@ export default function ContactPage() {
         </motion.div>
       </section>
 
-      <Footer />
-      <MobileNav />
     </main>
   );
 }

@@ -4,15 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Sparkles, Heart, Coffee, ShieldCheck, Leaf, Users, ChevronRight } from 'lucide-react';
-import Header from '@/components/home/Header';
-import Footer from '@/components/home/Footer';
-import MobileNav from '@/components/home/MobileNav';
 import Link from 'next/link';
 
 export default function AboutPage() {
   return (
-    <main className="relative z-10 w-full min-h-screen bg-white flex flex-col overflow-x-hidden">
-      <Header />
+    <main className="relative z-10 w-full flex-grow bg-white flex flex-col overflow-x-hidden" role="main">
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 md:py-24 min-h-[70vh] flex items-center overflow-hidden">
@@ -49,7 +45,7 @@ export default function AboutPage() {
             <div className="aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
               <Image 
                 className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9zVeNjOpq6cL4mJH5tOUIsN2a9UnitzdF6hvZhUj9D4lpzqe44p6sMDe7STLpv1bVS6Rw3Ez-QEaTgwhKUmd0HfZTfJ_P2WI1JNIk-7_-2xSSiGA7uSRy2JqWORUwz6p1VNBXegEc9UKxAvtYXG2dS0sAeYLsahnDf2dDSY2Iv-3FPQq5Tt88yY7FkosHDsDIMils6aHiWH6L2CZTik6-cqE28Zbvil1K1uHr4YYaV8RwFUeXQYIUhu-hDrx1vNV2y9ZYc6XuVwYI"
+                src="/images/about/about-img-01.png"
                 alt="Tea Corner inside cafe counter and prep area"
                 fill
                 priority
@@ -89,7 +85,7 @@ export default function AboutPage() {
               <div className="rounded-3xl overflow-hidden shadow-2xl relative aspect-[3/4] max-h-[520px]">
                 <Image 
                   className="object-cover" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBukssJnRFKwQkBUau2IydRUtP3Bn6Z-biueHMbn-3SWQkgjZIc6FZPP7l2DELYXDysoh-zCSobxOMkDrDlxsPHIZ5xhC0ZgrHVcxO7A6HagWkOELSeaExp1yFpEFrd-z1UKFE1mgTRu5wAJ0CA0JOOqIzP0BgUSPZ2rRRLm9TaR9azlpvevdESuwqeCcPW3pL0WVhl1aaHbVZwgnd7Y11Qeao_evTniCks2xQvEwPNzG8ju9YJguntjUlCPjmqQz--vIvqpFmNul8T"
+                  src="/images/about/about-img-02.png"
                   alt="Tea Corner storefront in Chennai with scooters parked"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -163,7 +159,7 @@ export default function AboutPage() {
             >
               <Image 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVNKyeEXfsHEWHs1rEG9SlcYbvPsurTfmePcWq1fvetA06zCg-LkOfSrYPWfTIFCCSJWLiO7pGIjKcg-LlfBZnsMVNlvierKCd5PShDo4_iQShKkAlzb8Qr_Jsh3uBgxhBAqggjsfwI99QWPTBTELowakSP31jiufeOKVMIlS0u6zyu1_2vTTxWCjdqikJA3eyc9dnvJrhkmrevYxBpFnWZ3fPmkNU5buB35tixOZ0dOhQ-NSBT93_HhvLzNvIOjOMkbcTXhetTcQa"
+                src="/images/about/about-img-03.png"
                 alt="Vibrant close-up of fresh fruit display at Tea Corner"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"
@@ -292,8 +288,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
-      <MobileNav />
     </main>
   );
 }

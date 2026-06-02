@@ -84,6 +84,7 @@ const overlayVariants = {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [menuCardOpen, setMenuCardOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -92,6 +93,15 @@ export default function Header() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Watch for menu-card-open class on body to hide/show nav
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setMenuCardOpen(document.body.classList.contains('menu-card-open'));
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -113,13 +123,13 @@ export default function Header() {
       <motion.header
         id="navbar"
         initial={{ y: -60, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 w-[92%] md:w-[75%] lg:w-[70%] z-[220] px-6 lg:px-10 py-3.5 flex justify-between items-center transition-all duration-300 ${
+        animate={menuCardOpen ? { y: -100, opacity: 0 } : { y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        className={`fixed top-4 left-1/2 -translate-x-1/2 w-[92%] md:w-[75%] lg:w-[70%] z-[220] px-6 lg:px-8 py-2 flex justify-between items-center transition-all duration-300 ${
           isOpen
             ? 'bg-transparent border-transparent shadow-none'
             : scrolled 
-              ? 'bg-white/80 shadow-[0_10px_40px_rgba(131,85,0,0.08)] py-3 border border-white/40 rounded-full backdrop-blur-md' 
+              ? 'bg-white/80 shadow-[0_10px_40px_rgba(131,85,0,0.08)] py-1.5 border border-white/40 rounded-full backdrop-blur-md' 
               : 'bg-white/45 shadow-[0_4px_30px_rgba(0,0,0,0.03)] border border-white/25 rounded-full backdrop-blur-md'
         }`}
       >
@@ -130,12 +140,12 @@ export default function Header() {
           }} 
           className="flex items-center gap-2 md:gap-3 font-display text-2xl md:text-3xl text-primary font-extrabold tracking-tight cursor-pointer hover:opacity-90 z-[230]"
         >
-          <Image src="/logo.png" alt="Tea Corner Logo" width={80} height={80} className="object-contain" />
-          <span>Tea Corner</span>
+          <Image src="/logo.png" alt="Tea Corner — Fresh burgers, juices & snacks in Chennai" width={56} height={56} className="object-contain" />
+          <span className="text-xl md:text-2xl">Tea Corner</span>
         </Link>
         
         {/* Desktop nav links */}
-        <nav className="hidden lg:flex items-center gap-10 font-sans text-sm font-semibold text-on-surface-variant z-10">
+        <nav className="hidden lg:flex items-center gap-10 font-sans text-sm font-semibold text-on-surface-variant z-10" aria-label="Main navigation">
           <Link
             href="/"
             className={`hover:text-primary transition-colors duration-300 relative py-1 cursor-pointer ${pathname === '/' ? 'text-primary font-bold' : ''}`}

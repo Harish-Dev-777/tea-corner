@@ -8,7 +8,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import Link from 'next/link';
 
 export default function Hero() {
-  const [rotationStep, setRotationStep] = useState(0);
+  const [rotationStep, setRotationStep] = useState(3);
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useIsMobile();
 
@@ -17,9 +17,9 @@ export default function Hero() {
 
   const foodItems = [
     {
-      id: "fries",
-      alt: "Loaded Fries",
-      src: "/images/hero/loaded-fries.png",
+      id: "palampuri",
+      alt: "Sweet Palampuri",
+      src: "/images/hero/palampuri.png",
       isUnsplash: false
     },
     {
@@ -225,9 +225,9 @@ export default function Hero() {
       {/* Main headings */}
       <div className="relative z-20 max-w-4xl mx-auto select-none">
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, scale: 0.8, y: -20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
           className="inline-flex items-center gap-2 bg-primary-fixed text-primary px-[16px] py-[6px] rounded-full text-xs md:text-sm font-semibold mb-3 tracking-wide shadow-sm"
         >
           <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse" />
@@ -235,16 +235,16 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
+          transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
           className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold text-on-surface mb-2.5 leading-[1.1] tracking-tight"
         >
           Delivering Incredible <br /> 
           <motion.span 
             initial={{ backgroundSize: '0% 100%' }}
             animate={{ backgroundSize: '100% 100%' }}
-            transition={{ duration: 1, delay: 0.6 }}
+            transition={{ duration: 1, delay: 1.1, ease: 'easeInOut' }}
             className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary-container to-secondary"
           >
             Moments
@@ -252,9 +252,9 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 1.3, ease: 'easeOut' }}
           className="font-sans text-xs md:text-base text-on-surface-variant max-w-md md:max-w-xl mx-auto leading-relaxed"
         >
           Fresh Burgers, Crispy Fries &amp; Tasty Sandwiches Delivered Hot to your doorstep. Experience the golden standard of flavor.
@@ -262,7 +262,10 @@ export default function Hero() {
       </div>
 
       {/* Food Plate Rotating Collage Section */}
-      <div 
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8, y: 50 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onTouchStart={handleTouchStart}
@@ -382,15 +385,15 @@ export default function Hero() {
             </motion.div>
           );
         })}
-      </div>
+      </motion.div>
 
 
 
       {/* View Full Menu CTA Button */}
       <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.7 }}
+        initial={{ opacity: 0, y: 30, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.8, delay: 2.1, type: 'spring', stiffness: 100, damping: 15 }}
         className="relative z-20 col-span-full"
       >
         <Link href="/menu" className="inline-block">
