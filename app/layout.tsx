@@ -15,6 +15,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: 'Tea Corner | Delivering Incredible Moments',
   description: 'Fresh Burgers, Crispy Fries & Tasty Sandwiches Delivered Hot to your doorstep. Experience the golden standard of flavor.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

@@ -26,7 +26,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 249,
     category: 'snacks',
     description: 'Our house-special double patty burger with caramelized onions and signature melted cheese.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-rLRiEDCEscx5Ts-CHaLzpaDz3HThiYfEYEYmSordpoPzbGEjlvSu-96_WVTC5BUDwi5abrwhAkAGFGOqQc_-Wl6Wr1vGVLj_mFaNvffsJZAuaTotmyVmQP6N1JtSzFMu4u0UY2npj8ElpgAtUxDybtpy6H3AQjz_9yABRSrGubS6x4Bp4QTWp8PRJy3KhJVs-U7_nZT-50G25-ciy-9DvrTFr26ijG8D-jy9YBnupJ4glW6e5z99WxbpKW7o9doV_5yQOqx9lFv4',
+    image: '/images/menu/burger.png',
     popular: true,
   },
   {
@@ -35,7 +35,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 189,
     category: 'snacks',
     description: 'Toasted sourdough bread filled with garden-fresh greens and premium aged cheddar.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKkAkQJxFnuPkWhILSRdAblCbUSAPHhfaeEI8CRXiG0y3tUNWE826n74bNbt_UlU_nzENZQZw1C_89EqSfFCSxqJU_eoolmbFCHGWvH5J7O-x_rv4cU-av29PG_jqAyu_1WMZvCkJ_cZJC4IeQwbAGt74pSiRq5n9jAl8kef08qwNgWXMpQ6fntyOVscYlrEC8rdp27bAhxnVlBWsAIfE0lXf0n_uKCIG4P1qADKLtg7uWAxrA6Iu0sYRfXICac157xllm_eskoPbD',
+    image: '/images/menu/sandwich.png',
   },
   {
     id: 'loaded-nacho-fries',
@@ -43,7 +43,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 159,
     category: 'snacks',
     description: 'Crispy golden fries topped with spicy nacho cheese, jalapeños, and fresh salsa.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCYn-KPXqLKwAOX-jT8AHkyDli4Vml9q-BxOahfGlsc2fy_BqgY9fRyVonrtE1f3nu6PmeNUUEFMu-T2hrMEgt8AICdzg-hGbf5H9nQiaUxivNaylEEXeEpxGbXgKMcizb3y4vPFqrOfa5-9NkVgWVCim0vHAKELyJAHq_73QvIC7HLXccGiOgugZrvYTN3fZmucbFttQ7-9dOow-zIoNvDrY5ef2Yp4W99_8nUjIbRcVnTJMQaCLUGj4oVFFWgzXVNxFn2zutSCHbK',
+    image: '/images/menu/loaded-fries.png',
   },
   {
     id: 'abc-juice',
@@ -60,7 +60,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 110,
     category: 'drinks',
     description: 'Refreshing lime and muddled mint leaves topped with sparkling soda and crushed ice.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpOy9cJ0u05HaGI4Ij2DdH3ESX_HrXoLkllIwqSYEhb2qdrOqHT-AKttXBcwxIeiF4zyXGlXiSIPXqKC_Jt4GHaF7Zys-LSpeFbRrC9pKp0TTEi1ktEW0io4ldaR2I2o-uLMybZIYBSdATadCoPaiTIuon4ebAIyixsCx401Pf7CHkwXbQpg48xpYP2apxe2M-kRqIXYdO3eNaZwLY5Kye5OcgJ7wwz9mqtbFcCVp6bZ6gR8FOiVWYVj0ZW1AQrVzydc6aFGa89v9V',
+    image: '/images/menu/mojito.png',
   },
   {
     id: 'palkova-bun',
@@ -77,7 +77,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 30,
     category: 'snacks',
     description: 'Traditional spiced potato filling in a perfectly flaky, hand-folded pastry crust.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw5L7m8YgKOfEXvp8h6AIupLUfyrLmXM2Jg_oFsvvwkIvmnq1gjS6oNaG_K7yzcV-jb5UE-FMK-jQUQFUiBLV-I_a7VGCjN1iKK2TAbJMzkUGqLPQ2JHlzAwZWnl6MK-CJj1QRTjUfJXks5J_1kNp_Q6SXUJgESDJpZqluvlyo5m6HKgceoFjDWJPeGpNA9eNJnuDOzuUXldwvj_fnAs7Kz__hfokN6FdFqaC_mT3ZEMcbdMcIzbCvLFIvfNhEHwQX86pLpdiPdmWG',
+    image: '/images/hero/samosa.png',
   },
   {
     id: 'pomegranate-juice',
@@ -93,7 +93,7 @@ const MENU_ITEMS: MenuItem[] = [
     price: 35,
     category: 'bakery',
     description: 'Buttery, flaky puff pastry with a whole spiced egg filling. Baked fresh hourly.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBaESdfm9gx2yjgE93v_-fSBLUJWZA0qvjVQpHRYsJJmiUcL3-MV65RhLCz2CaSzf0TtJV8s-SGToDgbeDIrqBIeuE_RA8Mpf38x6LlOkbJP6yW229dURHTJT_liW_b-lBNBtV_Xoa4b1RUqhb5gGqtFe6VMW4pAERm2YOP1aytxL7N0n9XSvZI0lOOMmnx2kl0ONyaQqwCIVRI3yYR2GdHIVw8S7BTcIQBolBRnnzsEkKIDenALyZ40Oz3v9OI8uWPCMkie61_L0KS',
+    image: '/images/hero/egg-puff.png',
   },
 ];
 
@@ -140,14 +140,14 @@ export default function MenuPage() {
         </div>
 
         {/* Filter controls */}
-        <div className="w-full max-w-full overflow-hidden mb-12">
+        <div className="w-full mb-12 -mx-6 md:mx-0 px-6 md:px-0 relative">
           {/* Categories Tab list */}
-          <div className="flex gap-3 overflow-x-auto flex-nowrap w-full md:w-auto pb-3 justify-start md:justify-center px-6 md:px-2 scroll-smooth touch-pan-x [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div className="flex gap-3 overflow-x-auto flex-nowrap w-full pb-4 justify-start md:justify-center scroll-smooth snap-x snap-mandatory [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-6 py-2.5 rounded-full font-display text-xs md:text-sm font-bold uppercase tracking-wider whitespace-nowrap shrink-0 transition-all duration-300 cursor-pointer ${
+                className={`px-6 py-2.5 rounded-full font-display text-xs md:text-sm font-bold uppercase tracking-wider whitespace-nowrap shrink-0 transition-all duration-300 cursor-pointer snap-start ${
                   activeCategory === cat.id
                     ? 'bg-gradient-to-r from-[#ff9f1c] to-[#fd8b00] text-white shadow-md shadow-[rgba(253,139,0,0.25)] scale-[1.02]'
                     : 'bg-surface-container-low text-on-surface-variant hover:bg-[#ff9f1c]/10 hover:text-[#fd8b00]'

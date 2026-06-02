@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, ChevronRight, Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const MENU_ITEMS = [
@@ -127,9 +128,10 @@ export default function Header() {
           onClick={() => {
             setIsOpen(false);
           }} 
-          className="font-display text-2xl md:text-3xl text-primary font-extrabold tracking-tight cursor-pointer hover:opacity-90 z-[230]"
+          className="flex items-center gap-2 md:gap-3 font-display text-2xl md:text-3xl text-primary font-extrabold tracking-tight cursor-pointer hover:opacity-90 z-[230]"
         >
-          Tea Corner
+          <Image src="/logo.png" alt="Tea Corner Logo" width={80} height={80} className="object-contain" />
+          <span>Tea Corner</span>
         </Link>
         
         {/* Desktop nav links */}

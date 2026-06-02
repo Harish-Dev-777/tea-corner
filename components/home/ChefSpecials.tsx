@@ -22,7 +22,7 @@ const SPECIAL_ITEMS: SpecialItem[] = [
     price: '₹280',
     badge: 'Most Popular',
     badgeColor: 'bg-primary-fixed text-on-primary-fixed-variant',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAdCCeL4nDMiuQTzySqya4HTg82a94S62_5IHDBis5KBXk80V3zPMX2Q54pweYSMvAU2NzOY5HMBG9xOcgUvxV8ZQtQhcHZQhrRF8ZfzATodEKeQY0Z0trG-z-1UAn5cdaJ1nlGuogBi55DM14-EdqaQubndNQlRMqlayXumvUHM8Gou-HZzLuZKaaLnDJr91RVNLj1aoK7Z_x3bc5xAvI3NCpiHf67mGdPc3luEozARs92cv0djGxvDXEWsATMAKlIrMnLOf2fR4HE',
+    image: '/images/menu/burger.png',
   },
   {
     id: 'loaded-nacho-fries',
@@ -31,7 +31,7 @@ const SPECIAL_ITEMS: SpecialItem[] = [
     price: '₹190',
     badge: "Chef's Choice",
     badgeColor: 'bg-secondary-fixed text-on-secondary-fixed-variant',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw0cH_0aEv8uEVVI64SM-JnXNSYz7NOjjWNRbyUnFHJqPDC-qfZCMfQi-6jAzAfYZueLJW53-GJ0C6507qLlgUoVxcce0vnFZzd_dYazHt34vc7FlayF6AgNLw_jzvjyBsDqVC6teeNrOeqqxES4ocqlTxg_xrmnUXR6qcwMjv_As8W2QNncH-vtMl0W7KIxPFDGBefYrbfbc5F6NEMDYWrzbaJXciUR4bYVgaGPD3zk19b_zrpGIZVb4dftUVNEJvKfDyt9RWTcqK',
+    image: '/images/menu/loaded-fries.png',
   },
   {
     id: 'gourmet-club-sandwich',
@@ -40,7 +40,7 @@ const SPECIAL_ITEMS: SpecialItem[] = [
     price: '₹220',
     badge: 'Fresh & Healthy',
     badgeColor: 'bg-tertiary-fixed text-on-tertiary-fixed',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBCHBj3DfWEhRX9urjKuXEVU0_weK8KSXakxY6dQRBBQI5MFhSkS7y2fzu3K6MomRHWxCJeb8rj2PSXJiFkJGH-YfOGmLJgd8M4TyUaRoJsSm7qtfHRYRPXz_Z_v4A7TM3J34jJj0mJzhtyL5ebRH78I0DlbxRLmdOPhHCNscnmAJGdj753oCHhctT9zbzka8YSCvTBa7g765gYuur35YeGJa7EltL6gpnJra46nsXE3ZUMshne-9qDjoyl-PgOskuGZ4IdaZ0JIjpz',
+    image: '/images/menu/sandwich.png',
   },
   {
     id: 'tropical-faluda',
@@ -49,7 +49,7 @@ const SPECIAL_ITEMS: SpecialItem[] = [
     price: '₹160',
     badge: 'Sweet Delight',
     badgeColor: 'bg-primary-fixed-dim text-on-primary-fixed-variant',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAVJUxe7Jx5_NJjJSZnS_dt1jZRjhUbIRCZIFsJXjAgj7rd-1Z2qKDFBCsvuAiihCE6AxXpYRX387l-7MXvaCjfnpnfOVLNnPg6gEowLkbuFj3NxdOt1x67lIrWFxgcChCL_PuJWUtQ-cUVjdkBWLdMQ8i8G7MunLVvmXWQs219K1UkrIbkGU8iL_fYLx-pLIQoZBuwbu3Kvzl3s3IeYVGnnJMO1LILtsrUIOnA0WlCBGQJvayiIm4hEP6B5XM2bHtXg1w45vKGxzha',
+    image: '/images/menu/faluda.png',
   },
   {
     id: 'mint-mojito',
@@ -58,7 +58,7 @@ const SPECIAL_ITEMS: SpecialItem[] = [
     price: '₹120',
     badge: 'Refreshing',
     badgeColor: 'bg-secondary-fixed-dim text-on-secondary-fixed-variant',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBJ2teWLr6Jhly_zx11-KAfr-8Fs9_YqCmvOyAnfXyQDDctm7PUdubzf43uwg1LelO5cbr7Zshk11QwkDoiHQtw_HqewTYmQ7lOls-XaydJf0PE_MpNNmX5Jsjlfw557ETgs3Nb1kSxi8gY1GaGUkuiWy-A5M0RelJe2SMmK9cei0JFQwK9M6GfZ4tq4F7swXsZj7a-B6W7G4LbLjmJlfVx94GtIK2ZIIAxeL7JAZTyYez3c1rFtJD-1CeyxGgCROVrUnOK366mmSHP',
+    image: '/images/menu/mojito.png',
   },
 ];
 

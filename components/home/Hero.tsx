@@ -19,38 +19,38 @@ export default function Hero() {
     {
       id: "fries",
       alt: "Loaded Fries",
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuALWabbZwni8U-bP9KUBwKvAAdw0GCzwDu3U02eI1sfY3MlZJ686ZeGVMEh9XB8F0rQ0agfbwmgmKEOs3R_sdCsgujsgB4L37AquGAcUeqFVkYx8bwjVc8P1O0HDZrsZ9dBScXGQrjHGZHeF45ymIpZYc_lGr3v9EgUDUfXVaGj_F21iX6b6nB3dbvou12Anwh9pw7qGbmTLJQUgiOVpCR4J6R3rcGgaOdxm4IrIuqs-1Gs7q9ebUM7VrsvWOtnGyHA-f3QTkspNgYK",
+      src: "/images/hero/loaded-fries.png",
       isUnsplash: false
     },
     {
       id: "burger",
       alt: "Crispy Chicken Burger",
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsLBuIzGwjb27WGQIqOtbW7nu1H6W7c-lSyd4mGfa212uWwVE9LYMRssQ4siMHlho1MmrYjIfvIUpq5GhkZ_6jzW0dQy9ifAiFp0dsdqspiKiwsCYcbx9GyAZRYrF9tEk-9o_wOAHz7-VI1JaijQu86UBqtsJX5lfnHBmwuHbSEBwPvU9All0uwNKF89Dc4aUw_B3-F8jv_VNj0IsIijp14LYV8NZDIdIaVfGc0I6LcN7_T_RDkxqhRk3XvAOLSDIBwHu7vXbCiVmI",
+      src: "/images/hero/burger-bg-removed.png",
       isUnsplash: false
     },
     {
       id: "sandwich",
       alt: "Gourmet Sandwich",
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAl5eswhMK2iIftlx3sqpOeKeIT--QIc0F96VDzRZls7cvVioMMDwgwJcWH4xuLEni10vrpU5DYt7h7QMq2SOyNWygg2fC_OZc2ccXHL7haiQpuQquaPRdBgpnr-jXF8AgwFGBAlTx7oT5v2-DXhNla75mm_DP7Syi0pjai9w_7yEKtw0ErnqEbR3RkijoPQc5s47LsP6QJfcakvIx8qBPYXGLuU6vNNv29insmvwtniyY2MA6FZDJUe-vqemMMj7t5MxntJsX46_DT",
+      src: "/images/hero/sandwich.png",
       isUnsplash: false
     },
     {
       id: "samosa",
       alt: "Crispy Samosas",
-      src: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80",
-      isUnsplash: true
+      src: "/images/hero/samosa.png",
+      isUnsplash: false
     },
     {
       id: "puff",
       alt: "Baked Puff Pastry",
-      src: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&auto=format&fit=crop&q=80",
-      isUnsplash: true
+      src: "/images/hero/egg-puff.png",
+      isUnsplash: false
     },
     {
       id: "chai",
       alt: "Cutting Chai Tea",
-      src: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=80",
-      isUnsplash: true
+      src: "/images/hero/tea.png",
+      isUnsplash: false
     }
   ];
 
