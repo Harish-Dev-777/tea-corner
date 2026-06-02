@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-display), sans-serif;
+
+  --color-surface: #fcf9f8;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e4e2e1;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #524534;
+  --color-outline: #857462;
+  --color-outline-variant: #d7c3ae;
+  --color-primary: #835500;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #f5a623;
+  --color-on-primary-container: #644000;
+  --color-primary-fixed: #ffddb4;
+  --color-primary-fixed-dim: #ffb955;
+  --color-on-primary-fixed-variant: #633f00;
+  --color-secondary: #904d00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fd8b00;
+  --color-on-secondary-container: #603100;
+  --color-secondary-fixed: #ffdcc3;
+  --color-secondary-fixed-dim: #ffb77d;
+  --color-on-secondary-fixed-variant: #6e3900;
+  --color-tertiary-fixed: #e4e3db;
+  --color-on-tertiary-fixed: #1b1c17;
+}
+
+@layer utilities {
+  .clip-ellipse {
+    clip-path: ellipse(50% 50% at 50% 50%);
+  }
+}
+
+/* Hide scrollbars globally for all browsers */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  background: radial-gradient(circle at top right, #fff4e1 0%, #fcf9f8 60%);
+  min-height: 100vh;
+}
+

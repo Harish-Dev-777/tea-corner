@@ -1,0 +1,6 @@
+{
+  "name": "Tea Corner",
+  "description": "Delivering Incredible Moments - Fresh Burgers, Crispy Fries & Tasty Sandwiches",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
