@@ -22,6 +22,16 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Address Middle */}
+          <div className="flex flex-col items-center text-center gap-1.5">
+            <span className="font-display font-bold text-on-surface text-base">Find Us</span>
+            <address className="text-on-surface-variant font-sans text-sm leading-relaxed not-italic">
+              Vadapalani, # 96/10,<br/>
+              Periyar Padai Choolaimedu,<br/>
+              Chennai - 600 094
+            </address>
+          </div>
+
           {/* Main Page Navigation Links */}
           <nav className="flex flex-wrap justify-center gap-8 md:gap-10 text-sm font-bold text-on-surface-variant" aria-label="Footer navigation">
             <Link

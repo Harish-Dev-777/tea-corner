@@ -108,7 +108,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-on-surface-variant font-sans text-sm md:text-base leading-relaxed">
                 <p>
-                  Located right in <span className="font-bold text-on-surface">Choolaimedu, Periyar Padhai</span>, Tea Corner started with a simple dream: to bring great tea and a friendly space to our neighborhood.
+                  Located right in <span className="font-bold text-on-surface">Vadapalani, # 96/10, Periyar Padai Choolaimedu</span>, Tea Corner started with a simple dream: to bring great tea and a friendly space to our neighborhood.
                 </p>
                 <p>
                   We saw that people in Chennai love their tea, but needed a cozy place to enjoy it. We source the best tea leaves and make fresh snacks that go perfectly with every sip.
@@ -278,7 +278,7 @@ export default function AboutPage() {
             
             <div className="relative z-10 shrink-0">
               <Link href="/menu">
-                <button className="bg-gradient-to-r from-[#ff9f1c] to-[#fd8b00] hover:shadow-xl text-white font-bold font-display px-8 py-4 rounded-full shadow-[0_6px_22px_rgba(253,139,0,0.3)] hover:scale-[1.03] active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-wider border-t border-white/20">
+                <button className="bg-gradient-to-r from-[#f9f7f5] to-[#ffffff] hover:shadow-xl text-black font-bold font-display px-8 py-4 rounded-full shadow-[0_6px_22px_rgba(253,139,0,0.3)] hover:scale-[1.03] active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-wider border-t border-white/20">
                   See Our Menu
                   <ChevronRight className="w-4 h-4" />
                 </button>

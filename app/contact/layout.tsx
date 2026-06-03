@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with Tea Corner Chennai — visit us at Choolaimedu, Periyar Padhai. Call +91 98765 43210, email hello@teacorner.in, or walk in during our opening hours.',
+    'Get in touch with Tea Corner Chennai — visit us at Vadapalani, # 96/10, Periyar Padai Choolaimedu. Call +91 70127 07168, or walk in during our opening hours.',
   alternates: {
     canonical: '/contact',
   },
   openGraph: {
     title: 'Contact Us | Tea Corner Chennai',
     description:
-      'Visit Tea Corner at Choolaimedu, Periyar Padhai, Chennai. Open Mon-Fri 7AM-9PM, Sat-Sun 8AM-10PM. Call, email, or walk in.',
+      'Visit Tea Corner at Vadapalani, # 96/10, Periyar Padai Choolaimedu, Chennai. Open Mon-Sun 7AM-10PM. Call, or walk in.',
     url: '/contact',
     type: 'website',
   },
@@ -26,11 +26,10 @@ function ContactJsonLd() {
     mainEntity: {
       '@type': 'Restaurant',
       name: 'Tea Corner',
-      telephone: '+919876543210',
-      email: 'hello@teacorner.in',
+      telephone: '+917012707168',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Periyar Padhai, Choolaimedu',
+        streetAddress: 'Vadapalani, # 96/10, Periyar Padai Choolaimedu',
         addressLocality: 'Chennai',
         addressRegion: 'Tamil Nadu',
         postalCode: '600094',
@@ -39,14 +38,8 @@ function ContactJsonLd() {
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
           opens: '07:00',
-          closes: '21:00',
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Saturday', 'Sunday'],
-          opens: '08:00',
           closes: '22:00',
         },
       ],

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about Tea Corner — a family-owned restaurant in Choolaimedu, Chennai. Since 2024, we\'ve been serving fresh burgers, authentic snacks & hand-crafted beverages at Periyar Padhai.',
+    'Learn about Tea Corner — a family-owned restaurant in Choolaimedu, Chennai. Since 2024, we\'ve been serving fresh burgers, authentic snacks & hand-crafted beverages at Vadapalani, # 96/10, Periyar Padai Choolaimedu.',
   alternates: {
     canonical: '/about',
   },
@@ -29,7 +29,7 @@ function AboutJsonLd() {
       foundingDate: '2024',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Periyar Padhai, Choolaimedu',
+        streetAddress: 'Vadapalani, # 96/10, Periyar Padai Choolaimedu',
         addressLocality: 'Chennai',
         addressRegion: 'Tamil Nadu',
         postalCode: '600094',

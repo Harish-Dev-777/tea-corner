@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
-import { Phone, Mail, Clock, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, Clock, MapPin, ArrowRight } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -49,7 +49,7 @@ export default function ContactPage() {
             <div>
               <h3 className="font-display text-2xl font-black text-on-surface mb-4">Visit Our Corner</h3>
               <p className="font-sans text-sm text-on-surface-variant leading-relaxed mb-6">
-                Call us directly, email our team, or simply walk in. We love welcoming guests to our clean, aromatic tea corner.
+                Call us directly, message us on WhatsApp, or simply walk in. We love welcoming guests to our clean, aromatic tea corner.
               </p>
             </div>
 
@@ -62,8 +62,8 @@ export default function ContactPage() {
                 <div className="text-left">
                   <h4 className="font-display text-xs font-bold uppercase tracking-widest text-[#904d00] mb-1">Address</h4>
                   <p className="font-sans text-sm md:text-base text-on-surface-variant leading-relaxed">
-                    Tea Corner Chennai, Choolaimedu,<br />
-                    Periyar Padhai, Chennai, Tamil Nadu PIN-600094
+                    Vadapalani, # 96/10,<br />
+                    Periyar Padai Choolaimedu, Chennai-600 094
                   </p>
                 </div>
               </div>
@@ -75,19 +75,21 @@ export default function ContactPage() {
                 <div className="text-left">
                   <h4 className="font-display text-xs font-bold uppercase tracking-widest text-[#904d00] mb-1">Phone</h4>
                   <p className="font-sans font-semibold text-sm md:text-base text-on-surface hover:text-[#904d00] transition-colors mt-0.5">
-                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <a href="tel:+917012707168">+91 70127 07168</a>
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-5 items-start">
-                <div className="w-12 h-12 rounded-full bg-primary-fixed/20 flex items-center justify-center text-primary shrink-0">
-                  <Mail className="w-5 h-5 text-primary" />
+                <div className="w-12 h-12 rounded-full bg-[#25D366]/15 flex items-center justify-center shrink-0">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
                 </div>
                 <div className="text-left">
-                  <h4 className="font-display text-xs font-bold uppercase tracking-widest text-[#904d00] mb-1">Email</h4>
-                  <p className="font-sans text-sm md:text-base text-on-surface hover:text-[#904d00] transition-colors mt-0.5">
-                    <a href="mailto:hello@teacorner.in">hello@teacorner.in</a>
+                  <h4 className="font-display text-xs font-bold uppercase tracking-widest text-[#904d00] mb-1">WhatsApp</h4>
+                  <p className="font-sans font-semibold text-sm md:text-base text-on-surface hover:text-[#25D366] transition-colors mt-0.5">
+                    <a href="https://wa.me/917012707168" target="_blank" rel="noopener noreferrer">+91 70127 07168</a>
                   </p>
                 </div>
               </div>
@@ -115,12 +117,8 @@ export default function ContactPage() {
 
               <div className="space-y-4 pt-4">
                 <div className="flex justify-between items-center py-4 border-b border-outline-variant/20">
-                  <span className="font-sans text-sm md:text-base text-on-surface-variant font-medium">Monday - Friday</span>
-                  <span className="font-display font-extrabold text-sm md:text-base text-on-surface">7:00 AM - 9:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-4 border-b border-outline-variant/20">
-                  <span className="font-sans text-sm md:text-base text-on-surface-variant font-medium">Saturday - Sunday</span>
-                  <span className="font-display font-extrabold text-sm md:text-base text-on-surface">8:00 AM - 10:00 PM</span>
+                  <span className="font-sans text-sm md:text-base text-on-surface-variant font-medium">Monday - Sunday</span>
+                  <span className="font-display font-extrabold text-sm md:text-base text-on-surface">7:00 AM - 10:00 PM</span>
                 </div>
               </div>
             </div>
@@ -138,10 +136,10 @@ export default function ContactPage() {
         <div className="mb-6 flex flex-col md:flex-row md:items-baseline justify-between gap-4">
           <div>
             <h3 className="font-display text-xl md:text-2xl font-black text-on-surface">Find us inside Chennai</h3>
-            <p className="font-sans text-xs text-on-surface-variant mt-0.5">We are nested right in Periyar Padhai, Choolaimedu. Come in for a friendly welcome sip!</p>
+            <p className="font-sans text-xs text-on-surface-variant mt-0.5">We are nested right in Vadapalani, Periyar Padai Choolaimedu. Come in for a friendly welcome sip!</p>
           </div>
           <a
-            href="https://maps.google.com/?q=Tea+Corner+Choolaimedu+Chennai"
+            href="https://maps.google.com/?q=96/10+Periyar+Padai+Choolaimedu+Vadapalani+Chennai+600094"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs group font-bold tracking-wider uppercase text-primary inline-flex items-center gap-1.5 cursor-pointer hover:underline underline-offset-4 shrink-0 transition-all"
@@ -160,7 +158,7 @@ export default function ContactPage() {
           className="relative w-full aspect-[21/9] min-h-[300px] max-h-[460px] rounded-3xl overflow-hidden shadow-lg border border-amber-100 group cursor-pointer"
         >
           <a 
-            href="https://maps.google.com/?q=Tea+Corner+Choolaimedu+Chennai"
+            href="https://maps.google.com/?q=96/10+Periyar+Padai+Choolaimedu+Vadapalani+Chennai+600094"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full h-full relative"

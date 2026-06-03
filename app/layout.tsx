@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     template: '%s | Tea Corner Chennai',
   },
   description:
-    'Tea Corner in Choolaimedu, Chennai serves fresh burgers, crispy fries, tasty sandwiches, hand-crafted juices & authentic bakery snacks. Visit us at Periyar Padhai for an incredible dining experience.',
+    'Tea Corner in Choolaimedu, Chennai serves fresh burgers, crispy fries, tasty sandwiches, hand-crafted juices & authentic bakery snacks. Visit us at Vadapalani, # 96/10, Periyar Padai Choolaimedu for an incredible dining experience.',
   keywords: [
     'Tea Corner',
     'Tea Corner Chennai',
     'Choolaimedu restaurant',
-    'Periyar Padhai food',
+    'Vadapalani food',
     'Chennai burgers',
     'fresh juices Chennai',
     'snacks Chennai',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: 'Tea Corner Chennai | Fresh Burgers, Juices & Snacks',
     description:
-      'Delivering Incredible Moments — Fresh Burgers, Crispy Fries & Tasty Sandwiches. Visit Tea Corner at Choolaimedu, Periyar Padhai, Chennai.',
+      'Delivering Incredible Moments — Fresh Burgers, Crispy Fries & Tasty Sandwiches. Visit Tea Corner at Vadapalani, # 96/10, Periyar Padai Choolaimedu, Chennai.',
     images: [
       {
         url: '/logo.png',
@@ -129,13 +129,12 @@ function JsonLd() {
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     image: `${SITE_URL}/logo.png`,
-    telephone: '+919876543210',
-    email: 'hello@teacorner.in',
+    telephone: '+917012707168',
     priceRange: '₹30 - ₹300',
     servesCuisine: ['Indian', 'Fast Food', 'Bakery', 'Beverages'],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Periyar Padhai, Choolaimedu',
+      streetAddress: 'Vadapalani, # 96/10, Periyar Padai Choolaimedu',
       addressLocality: 'Chennai',
       addressRegion: 'Tamil Nadu',
       postalCode: '600094',
@@ -149,14 +148,8 @@ function JsonLd() {
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         opens: '07:00',
-        closes: '21:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday', 'Sunday'],
-        opens: '08:00',
         closes: '22:00',
       },
     ],

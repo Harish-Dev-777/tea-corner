@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Menu | Tea Corner Chennai',
     description:
-      'Browse our curated selection of artisanal teas, freshly squeezed juices, and hand-crafted gourmet snacks. Made fresh daily at Periyar Padhai, Choolaimedu.',
+      'Browse our curated selection of artisanal teas, freshly squeezed juices, and hand-crafted gourmet snacks. Made fresh daily at Vadapalani, # 96/10, Periyar Padai Choolaimedu.',
     url: '/menu',
     type: 'website',
   },

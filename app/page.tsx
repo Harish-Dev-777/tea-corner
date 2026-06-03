@@ -8,7 +8,7 @@ import Reviews from '@/components/home/Reviews';
 export const metadata: Metadata = {
   title: 'Tea Corner Chennai | Fresh Burgers, Juices & Snacks in Choolaimedu',
   description:
-    'Delivering Incredible Moments — Tea Corner serves fresh burgers, crispy fries, tasty sandwiches, hand-crafted juices & bakery snacks at Choolaimedu, Periyar Padhai, Chennai.',
+    'Delivering Incredible Moments — Tea Corner serves fresh burgers, crispy fries, tasty sandwiches, hand-crafted juices & bakery snacks at Vadapalani, # 96/10, Periyar Padai Choolaimedu, Chennai.',
   alternates: {
     canonical: '/',
   },
